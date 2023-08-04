@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_gear_24dp"
+                android:layout_marginRight="10dp"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gear Gurus"
+                android:fontFamily="@font/montserrat"
+                android:textSize="28dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical">
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro"
+            android:fontFamily="@font/montserrat"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp">
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/name"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/email"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CPF"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/cpf"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:id="@+id/password"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar Senha"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:id="@+id/confirm"></EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Já possui uma conta? Fazer Login"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16dp"
+            android:textColor="#2C5EF3"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/go_login">
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Enviar"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/sign_up"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ou"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_facebook_24dp"></ImageView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_google_24dp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

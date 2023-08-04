@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.UserFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_user">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meu Plano"
+            android:fontFamily="@font/montserrat"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="18dp"
+            android:id="@+id/go_plans">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gerenciar métodos de pagamento"
+            android:fontFamily="@font/montserrat"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/go_payment_methods">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alterar Senha"
+            android:fontFamily="@font/montserrat"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/go_change_password">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:fontFamily="@font/montserrat"
+            android:textSize="17dp"
+            android:textColor="#FD3D3D"
+            android:layout_marginTop="10dp"
+            android:id="@+id/log_out">
+        </TextView>
+    </LinearLayout>
+</FrameLayout>

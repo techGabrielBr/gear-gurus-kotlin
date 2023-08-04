@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="Detalhes do Pedido">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:id="@+id/plan">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:layout_marginVertical="15dp"
+            android:id="@+id/price">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_wallet_24dp">
+            </ImageView>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Nenhuma forma de pagamento encontrada"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp">
+            </TextView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_add_24dp"
+                android:id="@+id/go_cart">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="18dp">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ativar renovação automática">
+            </CheckBox>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Finalizar"
+            android:backgroundTint="#9A9A9A"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/btn_submitt"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* É necessário adicionar uma forma de pagamento para continuar"
+            android:fontFamily="@font/montserrat"
+            android:textSize="15dp"
+            android:textColor="#FF3838"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="3dp">
+        </TextView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Voltar"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/btn_back"
+            android:layout_marginTop="10dp"></Button>
+    </LinearLayout>
+</ScrollView>

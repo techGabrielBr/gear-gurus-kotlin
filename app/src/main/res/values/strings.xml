@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gear Gurus</string>
+    <string name="title_home">Home</string>
+    <string name="title_historic">Histórico</string>
+    <string name="title_user">Minha Conta</string>
+    <string name="title_activity_unlock">UnlockActivity</string>
+</resources>

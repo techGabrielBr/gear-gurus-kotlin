@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <androidx.fragment.app.FragmentContainerView
+           xmlns:tomtom="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/map_fragment"
+           android:name="com.tomtom.sdk.map.display.ui.MapFragment"
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           tomtom:mapKey="bvmLazIooaw7NVIDdxQUoKs7eVNAC9l4"
+           android:layout_weight="1"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="1.2"
+           android:background="@color/white"
+           android:padding="25dp"
+           android:orientation="vertical">
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/main_scroll_view">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:id="@+id/loading"
+                       android:visibility="gone"
+                       android:orientation="vertical">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Carregando..."
+                           android:gravity="center"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/montserrat">
+                       </TextView>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Certifique-se que o GPS esteja ativado"
+                           android:gravity="center"
+                           android:textColor="@color/black"
+                           android:fontFamily="@font/montserrat"
+                           android:layout_marginTop="8dp">
+                       </TextView>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:gravity="center"
+                       android:layout_gravity="center"
+                       android:id="@+id/step_1"
+                       android:visibility="gone">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/montserrat"
+                           android:text="Qual é o seu destino?"
+                           android:textColor="@color/black"
+                           android:textSize="19dp"
+                           android:textStyle="bold"></TextView>
+
+                       <com.tomtom.sdk.search.ui.SearchView
+                           android:id="@+id/search_view"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginVertical="20dp"/>
+
+                       <com.tomtom.sdk.search.ui.SearchResultsView
+                           android:id="@+id/search_results_view"
+                           android:layout_width="match_parent"
+                           android:layout_height="100dp"
+                           />
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat"
+                       android:text="Desbloquear Bicicleta/Patinete"
+                       android:textColor="#2F43FA"
+                       android:textSize="16dp"
+                       android:textStyle="bold"
+                       android:gravity="center"
+                       android:layout_marginTop="30dp"
+                       android:id="@+id/go_unlock"></TextView>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/montserrat"
+                       android:text="Devolver Bicicleta/Patinete"
+                       android:textColor="#2F43FA"
+                       android:textSize="16dp"
+                       android:textStyle="bold"
+                       android:gravity="center"
+                       android:layout_marginTop="30dp"
+                       android:id="@+id/go_give_back"
+                       android:visibility="gone"></TextView>
+               </LinearLayout>
+           </ScrollView>
+       </LinearLayout>
+   </LinearLayout>
+</FrameLayout>
