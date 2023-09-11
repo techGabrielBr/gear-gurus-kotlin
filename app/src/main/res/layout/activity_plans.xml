@@ -204,6 +204,16 @@
                 </LinearLayout>
             </LinearLayout>
         </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="#FB1515"
+            android:fontFamily="@font/montserrat"
+            android:text="*Ao ultrapassar o tempo máximo de uso no dia, será cobrado 20 centavos por minuto de multa.">
+        </TextView>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="55dp"
