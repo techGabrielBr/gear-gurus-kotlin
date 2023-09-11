@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.RatingActivity"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="40dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="Avaliar Corrida">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_modal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modal: Bicicleta"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:layout_below="@id/title"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/text_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duração: 1 minuto"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:layout_below="@id/text_modal"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/text_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custo extra: R$ 0,00"
+        android:textSize="17dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/black"
+        android:layout_below="@id/text_duration" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliação: 0/5"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/text_extra"
+        android:textColor="@color/black"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRating"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1.0" />
+
+    <EditText
+        android:id="@+id/editTextJustification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_marginTop="16dp"
+        android:hint="Justifique sua avaliação"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:textSize="17dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Salvar"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/btn_save"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editTextJustification"></Button>
+
+</RelativeLayout>

@@ -64,7 +64,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:orientation="vertical"
                     android:background="#EAE8E8"
@@ -73,14 +73,44 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Plano A"
+                        android:text="Mobilidade Essencial"
                         android:fontFamily="@font/montserrat"
                         android:textSize="17dp"
                         android:textColor="@color/black">
                     </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• 30 min/dia"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Um único dispositivo conectado"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15dp"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 9,99/mês"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="17dp"
+                        android:textColor="#376502"
+                        android:layout_marginTop="80dp">
+                    </TextView>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:orientation="vertical"
                     android:background="#EAE8E8"
@@ -90,14 +120,44 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Plano B"
+                        android:text="Mobilidade Completa"
                         android:fontFamily="@font/montserrat"
                         android:textSize="17dp"
                         android:textColor="@color/black">
                     </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• 2 horas/dia"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Um único disposotivo conectado"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15dp"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 24,99/mês"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="17dp"
+                        android:textColor="#376502"
+                        android:layout_marginTop="80dp">
+                    </TextView>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:orientation="vertical"
                     android:background="#EAE8E8"
@@ -106,10 +166,40 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Plano C"
+                        android:text="Mobilidade em Grupo"
                         android:fontFamily="@font/montserrat"
                         android:textSize="17dp"
                         android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• 4 horas/dia"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• 4 dispositivos conectado"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15dp"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="R$ 39,99/mês"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="17dp"
+                        android:textColor="#376502"
+                        android:layout_marginTop="80dp">
                     </TextView>
                 </LinearLayout>
             </LinearLayout>

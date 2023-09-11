@@ -21,7 +21,7 @@ class PlansActivity : AppCompatActivity() {
 
         val root = binding.root
 
-        var selectedPlan = "A:20,00"
+        var selectedPlan = "Mobilidade Essencial:9,99"
 
         val btnBack : Button = root.findViewById(R.id.btn_back)
 
@@ -31,7 +31,7 @@ class PlansActivity : AppCompatActivity() {
 
         val planA: LinearLayout = root.findViewById(R.id.plan_a)
 
-        planA.setBackgroundDrawable(ColorDrawable(Color.parseColor("#139DF1")))
+        planA.setBackgroundDrawable(ColorDrawable(Color.parseColor("#6ee7ff")))
 
         val planB: LinearLayout = root.findViewById(R.id.plan_b)
         val planC: LinearLayout = root.findViewById(R.id.plan_c)
@@ -40,14 +40,14 @@ class PlansActivity : AppCompatActivity() {
 
         plans.forEach { p -> p.setOnClickListener{
             resetColor(plans)
-            it.setBackgroundDrawable(ColorDrawable(Color.parseColor("#139DF1")))
+            it.setBackgroundDrawable(ColorDrawable(Color.parseColor("#6ee7ff")))
 
             if(p == plans[0]){
-                selectedPlan = "A:20,00"
+                selectedPlan = "Mobilidade Essencial:9,99"
             }else if(p == plans[1]){
-                selectedPlan = "B:30,00"
+                selectedPlan = "Mobilidade Completa:24,99"
             }else{
-                selectedPlan = "C:40,00"
+                selectedPlan = "Mobilidade em Grupo:39,99"
             }
         } }
 

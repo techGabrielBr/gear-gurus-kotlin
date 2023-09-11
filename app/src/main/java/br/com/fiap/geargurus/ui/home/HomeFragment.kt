@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import br.com.fiap.geargurus.R
 import br.com.fiap.geargurus.databinding.FragmentHomeBinding
+import br.com.fiap.geargurus.ui.RatingActivity
 import br.com.fiap.geargurus.ui.UnlockActivity
 import com.tomtom.quantity.Distance
 import com.tomtom.sdk.common.measures.FormattedDistance
@@ -344,6 +345,9 @@ class HomeFragment : Fragment(), MapReadyCallback{
     private fun giveBack(goUnlock: TextView, goGiveBack: TextView){
         goGiveBack.visibility = View.GONE
         goUnlock.visibility = View.VISIBLE
+
+        val i = Intent(this@HomeFragment.context, RatingActivity::class.java)
+        startActivity(i)
 
         Toast.makeText(activity, "Patinete/Bicicleta devolvido(a)", Toast.LENGTH_SHORT).show()
     }
