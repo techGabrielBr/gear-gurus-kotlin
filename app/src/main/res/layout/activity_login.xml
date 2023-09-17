@@ -43,6 +43,30 @@
             android:layout_marginTop="30dp">
         </TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email e/ou senha incorreto(s)"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16dp"
+            android:textColor="#FF0033"
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_auth_error"
+            android:visibility="gone">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Múltiplas tentativas falhas! A conta foi bloqueada, tente novamente depois de 1 hora"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16dp"
+            android:textColor="#FF0033"
+            android:layout_marginTop="20dp"
+            android:id="@+id/text_blocked_account"
+            android:visibility="gone">
+        </TextView>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

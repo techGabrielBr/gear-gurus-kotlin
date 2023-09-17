@@ -1,6 +1,7 @@
 package br.com.fiap.geargurus.ui
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -18,6 +19,7 @@ import com.budiyev.android.codescanner.CodeScannerView
 import com.budiyev.android.codescanner.DecodeCallback
 import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
+import java.util.Date
 
 class UnlockActivity : AppCompatActivity() {
     private lateinit var codeScanner: CodeScanner
@@ -48,18 +50,22 @@ class UnlockActivity : AppCompatActivity() {
         val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
         codeScanner = CodeScanner(this, scannerView)
 
-        // Parameters (default values)
-        codeScanner.camera = CodeScanner.CAMERA_BACK // or CAMERA_FRONT or specific camera id
-        codeScanner.formats = CodeScanner.ALL_FORMATS // list of type BarcodeFormat,
-        // ex. listOf(BarcodeFormat.QR_CODE)
-        codeScanner.autoFocusMode = AutoFocusMode.SAFE // or CONTINUOUS
-        codeScanner.scanMode = ScanMode.SINGLE // or CONTINUOUS or PREVIEW
-        codeScanner.isAutoFocusEnabled = true // Whether to enable auto focus or not
-        codeScanner.isFlashEnabled = false // Whether to enable flash or not
+        codeScanner.camera = CodeScanner.CAMERA_BACK
+        codeScanner.formats = CodeScanner.ALL_FORMATS
+        codeScanner.autoFocusMode = AutoFocusMode.SAFE
+        codeScanner.scanMode = ScanMode.SINGLE
+        codeScanner.isAutoFocusEnabled = true
+        codeScanner.isFlashEnabled = false
 
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
+                val sharedPref = this.getSharedPreferences("initDate", Context.MODE_PRIVATE)
+                with(sharedPref.edit()){
+                    putLong("date", System.currentTimeMillis())
+                    apply()
+                }
+
                 val i = Intent(this@UnlockActivity, MainActivity::class.java)
                 i.putExtra("ShowModal", "true")
                 startActivity(i)
@@ -117,6 +123,9 @@ class UnlockActivity : AppCompatActivity() {
             return;
         }else{
             Toast.makeText(this, "Você deve permitir o acesso a sua camera para ler o QrCode", Toast.LENGTH_SHORT).show()
+            val i = Intent(this@UnlockActivity, MainActivity::class.java)
+            startActivity(i)
+
         }
     }
 }
