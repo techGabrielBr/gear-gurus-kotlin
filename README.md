@@ -1,8 +1,8 @@
 # Gear Gurus
 
-![Login](https://github.com/techGabrielBr/gear-gurus-kotlin/assets/89689001/ff21b688-874d-4234-8acb-82c644394422)
-
 MaaS, an acronym for Mobility as a Service, is an innovative concept that aims to offer integrated transport solutions through a digital platform. In this model, users have access to different forms of transport, such as bicycles, scooters, car sharing, public transport, among others, through a single application or platform.
+
+![Login](https://github.com/techGabrielBr/gear-gurus-kotlin/assets/89689001/ff21b688-874d-4234-8acb-82c644394422)
 
 The our MaaS project, which be called “Gear Gurus”, aims to solve the low supply of urban micromobility rental services and the high occupancy of roads due to an excess of cars. To this end, an application will be created focusing on renting transport modes such as bicycles and scooters.
 
