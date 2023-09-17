@@ -28,7 +28,7 @@ You have 3 different ways to run the application:
 
 - Download the apk: 
 
-        Download the .apk present in the root of this repository and install it on your android smartphone.
+        Download the .apk present in this link: https://www.mediafire.com/file/62dbf2grvrincyl/appGearGurus.apk/file and install it on your android smartphone.
 
 # Login
 
