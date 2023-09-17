@@ -76,17 +76,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat"
-            android:text="Avançar"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="13dp"
-            android:id="@+id/go_next"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
             android:text="Voltar"
             android:textColor="@color/white"
             android:textSize="18dp"

@@ -32,7 +32,7 @@ class UnlockActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val root = binding.root
-        val goNextBtn = root.findViewById<TextView>(R.id.go_next)
+//        val goNextBtn = root.findViewById<TextView>(R.id.go_next)
         val goBackBtn = root.findViewById<TextView>(R.id.go_back)
 
 
@@ -41,11 +41,11 @@ class UnlockActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-        goNextBtn.setOnClickListener {
-            val i = Intent(this@UnlockActivity, MainActivity::class.java)
-            i.putExtra("ShowModal", "true")
-            startActivity(i)
-        }
+//        goNextBtn.setOnClickListener {
+//            val i = Intent(this@UnlockActivity, MainActivity::class.java)
+//            i.putExtra("ShowModal", "true")
+//            startActivity(i)
+//        }
 
         val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
         codeScanner = CodeScanner(this, scannerView)
