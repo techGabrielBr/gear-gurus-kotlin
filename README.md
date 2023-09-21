@@ -22,7 +22,7 @@ You have 3 different ways to run the application:
 
 - Clone the repository:
 
-        1°: Now, ensure that build.gradle is in sync.
+        1°: Inside android studio, ensure that build.gradle is in sync.
 
         2°: Click on run to start the build process and running app.
 
